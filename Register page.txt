@@ -1,0 +1,24 @@
+                                                         ABC online register
+
+Feature:  Register page
+
+(1) Scenario: you should be able to see the home page
+    Given : user need to open chrome
+    When : type the WWW.abconline.com
+    Then user should see the home page
+
+(2) Scenario: you should be able to see the register form  
+    Given: user is on home page
+    When : user click on register
+    Then : user should see the register form successfully
+
+(3) Scenario: you should be able to register successfully
+    Given: user is on home page
+    When user click on register button
+    And enter the full name “maruti”
+    And enter the last name “patel”
+    And enter the email ma_patel23@yahoo.com
+    And enter the password “ma1234”
+    And enter the confirm password “ma1234”
+    And click on submit  button
+    Then user should register successfully & can see your registration completed 
